@@ -4,7 +4,6 @@
 
 #### Steps to run
 
-<br />
 
 ## Build and Run
 

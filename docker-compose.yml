@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  spring-vuln:
+    build: ./
+    image: spring-vuln
+    container_name: spring-vuln-log4j2
+    ports:
+      - "127.0.0.1:8080:8080"

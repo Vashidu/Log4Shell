@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 
 
-@RestController("/api/")
+@RestController
 public class VulnerableController {
 
     // logger
@@ -26,7 +26,7 @@ public class VulnerableController {
         this.request = request;
     }
 
-    @GetMapping("/hello/{name}")
+    @GetMapping("/")
     public ResponseEntity<String> hello(@PathVariable String name) {
 
         log.info("User-Agent: {}", request.getHeader("User-Agent"));
